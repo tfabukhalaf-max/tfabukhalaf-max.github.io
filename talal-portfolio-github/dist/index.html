@@ -24,14 +24,25 @@
   }
   </script>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307111f'/%3E%3Cpath d='M15 18h34v8H36v24h-8V26H15z' fill='%23f5f1e8'/%3E%3Ccircle cx='49' cy='49' r='5' fill='%23d4a84e'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=20261021">
+  <link rel="stylesheet" href="styles.css?v=20261022">
 </head>
 <body>
   <a class="skip-link" href="#work">Skip to content</a>
   <div class="page-glow" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="monogram" href="#top" aria-label="Talal Faisal Abukhalaf, home">TA<span></span></a>
+    <a class="holdings-brand" href="#top" aria-label="TFA Holdings — Talal Faisal Abukhalaf, home">
+      <svg class="holdings-logo" viewBox="120 175 1020 930" role="img" aria-label="TFA Holdings logo" xmlns="http://www.w3.org/2000/svg">
+        <defs><filter id="holdings-contrast" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
+          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 -2.8 0 0 0 1" result="navyMask"/>
+          <feFlood flood-color="#f3efe5" result="reverseInk"/><feComposite in="reverseInk" in2="navyMask" operator="in" result="reverseLogo"/>
+          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 2 -2 0 0 -.1" result="orangeMask"/>
+          <feFlood flood-color="#ff7b18" result="brandOrange"/><feComposite in="brandOrange" in2="orangeMask" operator="in" result="orangeLogo"/>
+          <feMerge><feMergeNode in="reverseLogo"/><feMergeNode in="orangeLogo"/></feMerge>
+        </filter></defs>
+        <image href="assets/tfa-holdings-source.png" width="1254" height="1254" filter="url(#holdings-contrast)"/>
+      </svg>
+    </a>
     <nav aria-label="Main navigation">
       <a href="#work">Work</a>
       <a href="#journey">Journey</a>
@@ -48,13 +59,13 @@
         <h1>Talal Faisal<br><em>Abukhalaf</em></h1>
         <p class="hero-intro">A student building practical experience across digital media, business, engineering, and innovation.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my work</a>
-          <a class="button button-secondary" href="#profile">About me</a>
+          <a class="button button-primary" href="#work">Explore his work</a>
+          <a class="button button-secondary" href="#profile">About Talal</a>
         </div>
       </div>
 
       <div class="hero-visual reveal" aria-label="Portrait of Talal Faisal Abukhalaf">
-        <img src="assets/talal-saudi-portrait.jpg" width="1063" height="1180" fetchpriority="high" alt="Talal Faisal Abukhalaf wearing Saudi formal dress">
+        <img src="assets/talal-main-portrait.png" width="525" height="495" fetchpriority="high" alt="Talal Faisal Abukhalaf wearing Saudi formal dress and a bisht">
         <div class="visual-label label-top">Talal Faisal Abukhalaf</div>
         <div class="visual-label label-bottom">Riyadh · Saudi Arabia</div>
         <div class="visual-number">01</div>
@@ -68,9 +79,9 @@
     </section>
 
     <section class="statement shell reveal" aria-labelledby="statement-title">
-      <p class="section-kicker">My approach</p>
-      <h2 id="statement-title">Start early. Build carefully.<br><span>Let the work speak.</span></h2>
-      <p>I use each project as a chance to develop stronger judgment, clearer communication, and practical skills that extend beyond the classroom.</p>
+      <p class="section-kicker">Talal’s approach</p>
+      <h2 id="statement-title">Starting early. Building carefully.<br><span>Letting the work speak.</span></h2>
+      <p>Talal uses each project as a chance to develop stronger judgment, clearer communication, and practical skills that extend beyond the classroom.</p>
     </section>
 
     <section class="work shell" id="work" aria-labelledby="work-title">
@@ -84,7 +95,7 @@
         <div class="project-copy">
           <p class="project-type">Digital media · FLF Law</p>
           <h3>Building a clear and consistent professional presence</h3>
-          <p>I manage Instagram content for Faisal Bin Adel Abu Khalaf Office for Law and Legal Consultations. My work includes planning content, creating posts and stories, writing captions, and maintaining a consistent brand.</p>
+          <p>Talal manages Instagram content for Faisal Bin Adel Abu Khalaf Office for Law and Legal Consultations. His work includes planning content, creating posts and stories, writing captions, and maintaining a consistent brand.</p>
           <ul class="project-tags" aria-label="Skills used">
             <li>Content planning</li>
             <li>Canva</li>
@@ -109,8 +120,8 @@
           <div class="project-number">03</div>
           <p class="project-type">Innovation · Robotics</p>
           <h3>VEX Design Award &amp; World Championship qualification</h3>
-          <p>I won the Design Award at a VEX Robotics competition in Saudi Arabia and qualified for the VEX Robotics World Championship.</p>
-          <p>My experience also includes recognition from the NASA International Space Apps Challenge, VEX Robotics volunteering, and the Saudi Federation for Robotics &amp; RC Sports.</p>
+          <p>Talal won the Design Award at a VEX Robotics competition in Saudi Arabia and qualified for the VEX Robotics World Championship.</p>
+          <p>His experience also includes recognition from the NASA International Space Apps Challenge, VEX Robotics volunteering, and the Saudi Federation for Robotics &amp; RC Sports.</p>
         </article>
       </div>
       <article class="project project-featured games-project reveal" id="tfa-games">
@@ -118,7 +129,7 @@
         <div class="project-copy">
           <p class="project-type">Game development · TFA Games</p>
           <h3>Developer of TFA Games</h3>
-          <p>I am the developer of TFA Games, a collection of arcade games playable on mobile and desktop.</p>
+          <p>Talal is the developer of TFA Games, a collection of arcade games playable on mobile and desktop.</p>
           <a class="text-link" href="https://tfa-games.tfabukhalaf.chatgpt.site" target="_blank" rel="noreferrer">Explore TFA Games <span aria-hidden="true">↗</span></a>
         </div>
         <a class="games-mark" href="https://tfa-games.tfabukhalaf.chatgpt.site" target="_blank" rel="noreferrer" aria-label="Visit TFA Games"><img src="assets/tfa-games.png" alt="TFA Games logo" width="240" height="240" loading="lazy"></a>
@@ -151,7 +162,7 @@
           <span class="timeline-label">TASIS</span>
           <div>
             <h3>Leadership &amp; international learning</h3>
-            <p>I attended TASIS England twice and TASIS Switzerland once, at the Lugano campus. I took leadership and engineering courses and studied Italian.</p>
+            <p>Talal attended TASIS England twice and TASIS Switzerland once, at the Lugano campus. He took leadership and engineering courses and studied Italian.</p>
           </div>
         </article>
       </div>
@@ -162,8 +173,8 @@
         <figure class="profile-photo"><img src="assets/talal-personal-portrait.jpg" alt="Talal Faisal Abukhalaf in a black shirt" width="385" height="484" loading="lazy"></figure>
         <p class="section-kicker">Profile</p>
         <h2 id="profile-title">Curious across disciplines.<br>Serious about growth.</h2>
-        <p>I am an American Diploma student at King Faisal School with interests in finance, business, digital media, and innovation. I value practical experience because it turns ideas into skills—and skills into meaningful work.</p>
-        <a class="text-link" href="https://sa.linkedin.com/in/talal-faisal-abukhalaf-b57984421" target="_blank" rel="noreferrer">View my LinkedIn <span aria-hidden="true">↗</span></a>
+        <p>Talal is an American Diploma student at King Faisal School with interests in finance, business, digital media, and innovation. He values practical experience because it turns ideas into skills—and skills into meaningful work.</p>
+        <a class="text-link" href="https://sa.linkedin.com/in/talal-faisal-abukhalaf-b57984421" target="_blank" rel="noreferrer">View his LinkedIn <span aria-hidden="true">↗</span></a>
       </div>
 
       <div class="profile-details reveal">
@@ -180,7 +191,7 @@
         <div>
           <span>Finance</span>
           <strong>Day trading</strong>
-          <p>I actively day trade stocks.</p>
+          <p>He actively day trades stocks.</p>
         </div>
         <div>
           <span>Languages</span>
@@ -191,8 +202,8 @@
     </section>
 
     <section class="closing shell reveal" aria-label="Closing statement">
-      <p>Student today.<br><span>Building for tomorrow.</span></p>
-      <a class="button button-primary" href="https://sa.linkedin.com/in/talal-faisal-abukhalaf-b57984421" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+      <p>A student today.<br><span>Building for tomorrow.</span></p>
+      <a class="button button-primary" href="https://sa.linkedin.com/in/talal-faisal-abukhalaf-b57984421" target="_blank" rel="noreferrer">Connect with Talal</a>
     </section>
   </main>
 
