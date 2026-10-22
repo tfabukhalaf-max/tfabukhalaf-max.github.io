@@ -23,8 +23,8 @@
     }
   }
   </script>
-  <link rel="icon" type="image/svg+xml" href="assets/tfa-holdings-favicon.svg?v=3">
-  <link rel="stylesheet" href="styles.css?v=20261022-3">
+  <link rel="icon" type="image/svg+xml" href="assets/tfa-holdings-emblem-v4.svg">
+  <link rel="stylesheet" href="portfolio-layout-v4.css">
 </head>
 <body>
   <a class="skip-link" href="#work">Skip to content</a>
@@ -32,16 +32,7 @@
 
   <header class="site-header">
     <a class="holdings-brand" href="#top" aria-label="TFA Holdings — Talal Faisal Abukhalaf, home">
-      <svg class="holdings-logo" viewBox="590 100 270 250" role="img" aria-label="TFA Holdings logo" xmlns="http://www.w3.org/2000/svg">
-        <defs><filter id="holdings-contrast" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">
-          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 -2.8 0 0 0 1" result="navyMask"/>
-          <feFlood flood-color="#f3efe5" result="reverseInk"/><feComposite in="reverseInk" in2="navyMask" operator="in" result="reverseLogo"/>
-          <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 2 -2 0 0 -.1" result="orangeMask"/>
-          <feFlood flood-color="#ff7b18" result="brandOrange"/><feComposite in="brandOrange" in2="orangeMask" operator="in" result="orangeLogo"/>
-          <feMerge><feMergeNode in="reverseLogo"/><feMergeNode in="orangeLogo"/></feMerge>
-        </filter></defs>
-        <image href="assets/tfa-holdings-brand-family.png" width="1448" height="1086" filter="url(#holdings-contrast)"/>
-      </svg>
+      <img class="holdings-logo" src="assets/tfa-holdings-emblem-v4.svg" alt="" width="64" height="60">
       <span class="holdings-wordmark" aria-hidden="true"><strong>TFA<span>©</span></strong><span>HOLDINGS</span></span>
     </a>
     <nav aria-label="Main navigation">
@@ -171,7 +162,6 @@
 
     <section class="profile shell" id="profile" aria-labelledby="profile-title">
       <div class="profile-copy reveal">
-        <figure class="profile-photo"><img src="assets/talal-personal-portrait.jpg" alt="Talal Faisal Abukhalaf in a black shirt" width="385" height="484" loading="lazy"></figure>
         <p class="section-kicker">Profile</p>
         <h2 id="profile-title">Curious across disciplines.<br>Serious about growth.</h2>
         <p>Talal is an American Diploma student at King Faisal School with interests in finance, business, digital media, and innovation. He values practical experience because it turns ideas into skills—and skills into meaningful work.</p>
@@ -200,7 +190,10 @@
           <p>Turkish — developing proficiency</p>
         </div>
       </div>
-        <figure class="additional-portrait"><img src="assets/talal-additional-portrait.png" alt="Talal Faisal Abukhalaf wearing a white thobe and red-and-white shemagh" width="1063" height="1180" loading="lazy"></figure>
+      <div class="profile-gallery" aria-label="Photos of Talal Faisal Abukhalaf">
+        <figure class="gallery-portrait"><img src="assets/talal-personal-portrait.jpg" alt="Talal Faisal Abukhalaf in a black shirt" width="385" height="484" loading="lazy"></figure>
+        <figure class="gallery-portrait"><img src="assets/talal-additional-portrait.png" alt="Talal Faisal Abukhalaf wearing a white thobe and red-and-white shemagh" width="1063" height="1180" loading="lazy"></figure>
+      </div>
     </section>
 
     <section class="closing shell reveal" aria-label="Closing statement">
