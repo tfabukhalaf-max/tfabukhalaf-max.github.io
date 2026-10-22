@@ -24,3 +24,19 @@
 .additional-portrait{grid-column:1/-1;margin:0;overflow:hidden;border-radius:4px;aspect-ratio:1/1;max-width:440px;width:100%;justify-self:center;background:#111e2b}
 .additional-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 25%}
 @media(max-width:650px){.hero-visual{aspect-ratio:525/495}.hero-visual img{object-fit:contain;object-position:center}.additional-portrait{max-width:none}}
+
+/* Keep the emblem separate from its readable Holdings wordmark. */
+.holdings-brand{width:auto;gap:11px;justify-content:flex-start;min-height:76px}
+.holdings-logo{width:58px;height:58px;flex:none;overflow:hidden}
+.holdings-wordmark{display:flex;flex-direction:column;gap:5px;color:var(--paper);line-height:1}
+.holdings-wordmark strong{font:800 28px/1 Arial,sans-serif;letter-spacing:-1px}
+.holdings-wordmark strong span{font:10px/1 Arial,sans-serif;vertical-align:top;margin-left:3px;letter-spacing:0}
+.holdings-wordmark>span{font:600 9px/1 Arial,sans-serif;letter-spacing:2.1px}
+/* Profile text and details share the space beside the portrait. */
+.profile{grid-template-columns:minmax(0,1.35fr) minmax(0,.75fr);gap:28px 52px;align-items:start}
+.profile-copy{grid-column:1;grid-row:1;grid-template-columns:125px minmax(0,1fr)}
+.profile-details{grid-column:1;grid-row:2;grid-template-columns:1fr 1fr;align-self:end}
+.additional-portrait{grid-column:2;grid-row:1/3;align-self:stretch;justify-self:stretch;max-width:none;aspect-ratio:auto;height:100%;min-height:390px}
+.additional-portrait img{object-position:50% 35%}
+@media(max-width:900px){.profile{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:25px}.profile-copy{grid-template-columns:95px minmax(0,1fr)}.profile-copy h2{font-size:25px}.profile-copy>p:not(.section-kicker),.profile-copy .text-link{grid-column:1/-1}.profile-photo{grid-row:1/3}.profile-copy>p:not(.section-kicker){margin-top:18px}}
+@media(max-width:650px){.holdings-brand{min-height:70px;gap:9px;width:auto}.holdings-logo{width:50px;height:50px}.holdings-wordmark strong{font-size:25px}.holdings-wordmark>span{font-size:8px;letter-spacing:1.8px}.profile{grid-template-columns:1fr;gap:28px}.profile-copy{grid-column:1;grid-row:auto;grid-template-columns:100px minmax(0,1fr)}.profile-details{grid-column:1;grid-row:auto}.additional-portrait{grid-column:1;grid-row:auto;min-height:0;height:auto;aspect-ratio:1/1}}
